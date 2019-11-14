@@ -1,9 +1,20 @@
-# Test Automation Demo
+# Fake User Handling Demo
 ``` Details
 This repository includes a functional UI testing for an application consists of tasks like generating fake users 
-based on facebook.com register template
-
+based on facebook.com register template. fake.db includes 1000 fake users to be used for registering to facebook.com
 ``` 
+
+# User information structure
+``` python
+  "first_name": self.generator.first_name(),
+  "last_name": self.generator.last_name(),
+  "sex": sex,
+  "mail": self.generator.free_email(),
+  "password": self.generator.password(),
+  "birth_date": self.generator.date_of_birth(),
+  "tel": self.generator.phone_number(),
+  "image": self.generator.image_url()
+```
 
 ## Python Project
 ``` Python projects 
@@ -11,7 +22,6 @@ based on facebook.com register template
 ``` 
 
 ## Technology Stack
-
 - [Python](https://www.python.org/)
 - [Pandas](https://pandas.pydata.org/)
 - [Faker](https://github.com/joke2k/faker)
